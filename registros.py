@@ -1,9 +1,10 @@
 import json
+import os
 import requests
 
-# Reemplaza con tus credenciales
-api_key = '869a64c220260c1'
-api_secret = '9ea092b7c05e142'
+# API credentials are now read from environment variables
+api_key = os.getenv('ASIATECH_API_KEY')
+api_secret = os.getenv('ASIATECH_API_SECRET')
 
 url = "https://erp.asiatech.com.mx/api/resource/Employee Checkin"
 
