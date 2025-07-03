@@ -1,8 +1,10 @@
 import json
 import os
 import requests
+from dotenv import load_dotenv
 
 # API credentials are now read from environment variables
+load_dotenv()
 api_key = os.getenv('ASIATECH_API_KEY')
 api_secret = os.getenv('ASIATECH_API_SECRET')
 
